@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-Personal Website</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>My Projects</h1>
@@ -18,12 +20,15 @@
       Berikut adalah beberapa project sederhana yang pernah atau saya kerjakan.
     </p>
     <h3>Project 1: Buku "Pendidikan dan Teknologi"</h3>
+    <div class="project-container">
     <img
+    class="project-img"
       src="assets/buku.png"
       style="border-radius: 15px"
       alt="Ilustrasi Project"
       width="500"
     />
+    </div>
     <p>
       Buku yang berisi kumpulan artikel setiap kelompok Kelas 1A pada mata
       kuliah Pendidikan Bahasa Indonesia untuk memenuhi tugas UAS
@@ -32,18 +37,23 @@
       Project 2: Esai “Transformasi Peran Generasi Muda dalam Mitigasi Perubahan
       Iklim dan Pelestarian Ekosistem Darat”
     </h3>
+    <div class="project-container">
     <img
+    class="project-img"
       src="assets/lomba.png"
       style="border-radius: 15px"
       alt="Ilustrasi Project"
       width="500"
     />
-    <br /><img
+    </div>
+    <br /><div class="project-container"><img
+    class="project-img"
       src="assets/sertifikat.jpg"
       style="border-radius: 15px"
       alt="Ilustrasi Project"
       width="500"
     />
+    </div>
     <p>
       Menulis esai mengenai peran strategis generasi muda dalam mendukung
       pencapaian SDG 13 dan SDG 15 melalui inovasi berbasis lingkungan, aksi
@@ -54,11 +64,13 @@
     </p>
     <h3>Project 3: Game "Digital Wayang Kreswara: Echoes of Lost Souls"</h3>
     <img
+    <div class="project-container">
       src="assets/game.jpg"
       style="border-radius: 15px"
       alt="Ilustrasi Project"
       width="500"
     />
+    </div>
     <p>
       Game yang dibuat untuk memenuhi project UAS mata kuliah Analisis
       Perancangan dan Sistem Informasi
@@ -72,8 +84,11 @@
       <li>Visual Studio Code</li>
       <li>Artificial Intelligence</li>
     </ul>
-    <h2>Ringkasan Project</h2>
+    
+    <h2 class="judul-ringkasan">Ringkasan Project</h2>
     <table border="1">
+      <div class="tabel-container"> 
+        <table class="tabel-project">
       <thead>
         <tr>
           <th colspan="4">Ringkasan Portofolio Project</th>
@@ -107,6 +122,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     <hr />
     <p>Tertarik berdiskusi?<a href="contact.html">Hubungi saya</a></p>
     <p>&copy 2026 Nayla Sucia Rahmawati. Dibuat menggunakan HTML</p>
