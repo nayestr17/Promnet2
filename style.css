@@ -1,0 +1,278 @@
+body {
+
+    background: linear-gradient(135deg, #ffa0b8, #ffffff);
+    font-family:'Public Sans', sans-serif;
+    margin:0;
+    padding:0;
+    color: rgb(0, 0, 0);
+}
+nav {
+    background-color: #d94499;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #ffe7a9;
+}
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #d94499;
+    padding: 5px;
+    margin: 20px auto;
+    display: block;
+}
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-img {
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    padding:10px;
+    background:white;
+    border:3px solid transparent;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.4s ease;
+}
+.project-img {
+    transition:0.2s;
+}
+.project-img:hover {
+    transform:scale(1.08) translateY(-10px);
+    border-color:#ea26a2;
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+.project-img {
+    animation: munculGambar 1s ease;
+}
+@keyframes munculGambar {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    width: 650px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.contact-form table {
+    width:100%;
+    border-collapse:collapse;
+}
+.contact-form td,
+.contact-form th {
+
+    padding:10px;
+
+}
+.contact-form input,
+.contact-form textarea {
+
+    width:100%;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+.contact-form input[type="submit"] {
+    background:#2a9d8f;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+.contact-form input[type="submit"]:hover {
+    background:#c11d6c;
+    transform:scale(1.1);
+}
+body {
+    animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+h1 {
+    color:#48013c;
+    font-size:40px;
+    text-align:center;
+
+}
+h2 {
+    color:#3a062d;
+}
+h3 {
+    color:#750965;
+}
+hr {
+    border:none;
+    height:2px;
+    background:#8b1a67;
+    margin:30px 0;
+}
+
+
+.judul-ringkasan {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tabel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabel-project {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabel-project th,
+.tabel-project td {
+    border: 1px solid #000000;
+    padding: 15px;
+}
+
+.tabel-project th {
+    background-color: #751c72;
+    color: white;
+}
+
+.tabel-project td {
+    background-color: white;
+}
+
+.tabel-project tbody tr {
+    transition: 0.3s;
+}
+
+.tabel-project tbody tr:hover {
+    transform: scale(1.02);
+    background-color: #f5f5f5;
+}
+
+
+@media (max-width: 700px) {
+    .tabel-project {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .tabel-project th,
+    .tabel-project td {
+        padding: 8px;
+    }
+}
+
+.judul-home {
+
+    animation: munculAtas 1s ease;
+
+}
+.foto {
+
+    animation: munculFoto 1.5s ease;
+
+}
+.pembuka-home {
+
+    animation: munculBawah 1.5s ease;
+
+}
+.deskripsi-home {
+
+    animation: munculBawah 1.5s ease;
+
+}
+.mempelajari-home {
+
+    animation: munculBawah 1.5s ease;
+
+}
+@keyframes munculFoto {
+
+
+    from {
+
+        opacity:0;
+
+        transform:scale(0.5);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+@keyframes munculBawah {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
